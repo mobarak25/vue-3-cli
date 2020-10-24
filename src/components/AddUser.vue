@@ -26,6 +26,7 @@
 </template>
 
 <script>
+import $ from "jquery";
 $(document).ready(function () {
     $("h5").click(function () {
         alert("click me");
