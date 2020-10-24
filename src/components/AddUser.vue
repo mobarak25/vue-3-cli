@@ -1,6 +1,7 @@
 <template>
     <div class="w-25 border p-4 m-auto">
-        <h3>This is add user component</h3>
+        <h3>This is add user component h3</h3>
+        <h5>Click me</h5>
         <form @submit.prevent="submitUser">
             <input
                 class="form-control mb-2"
@@ -25,6 +26,12 @@
 </template>
 
 <script>
+$(document).ready(function () {
+    $("h5").click(function () {
+        alert("click me");
+    });
+});
+
 export default {
     name: "AddUser",
 
