@@ -26,13 +26,7 @@
 </template>
 
 <script>
-import $ from "jquery";
-$(document).ready(function () {
-    $("h5").click(function () {
-        alert("click me");
-    });
-});
-
+var $ = window.$;
 export default {
     name: "AddUser",
 
@@ -49,6 +43,12 @@ export default {
             this.name = "";
             this.email = "";
         },
+    },
+
+    mounted() {
+        $("h5").click(function () {
+            alert("click me");
+        });
     },
 };
 </script>
